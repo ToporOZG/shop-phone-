@@ -1,3 +1,12 @@
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color:#F3F3F3;
 
@@ -65,6 +74,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
+}
+
+.button-seconary-hover:hover {
+    background-color: rgb(211, 211, 211);
+    color: black;
+    transition: all 0.7s;
 }
 
 .button-primary-hover {
@@ -77,6 +93,13 @@ header {
     flex-direction: column;
     justify-content: center;
     margin-left: 12px;
+    cursor: pointer;
+}
+
+.button-primary-hover:hover {
+    background-color: rgb(150, 140, 0);
+    color: white;
+    transition: all 0.7s;
 }
 
 .category {
@@ -104,4 +127,219 @@ header {
     font-weight: 500;
     line-height: 45px;
     letter-spacing: 0em;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-realme {
+    margin-top: 38px;
+}
+
+.productcart {
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 38px;
+    width: 315px;
+    height: 443px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-series {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.feature {
+    width: 314px;
+    height: 122px;
+    background-color: #d8d8d8;
+    border-radius: 30px;
+    gap: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.footer {
+    background-color:rgb(255, 255, 255);
+}
+
+.footername {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.descfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.footer{
+    width: 1335px;
+    align-items: center;
+}
+
+.footer-text {
+    width: 155px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-product {
+    text-align: center;
+}
+
+.text-product {
+    margin-bottom: 40px;
+}
+
+.other-img {
+    margin-top: 10px;
+    padding: 25px;
+    background-color: #d8d8d8;
+    border-radius: 30px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+}
+
+.price-product {
+    margin-bottom: 35px;
+}
+
+.color-product {
+    margin-bottom: 20px;
+}
+
+.switch-color {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.switch-quantity {
+    margin: 10px;
+    background-color: #a8a8a8;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+.type-product {
+    margin-bottom: 20px;
+}
+
+.switch-type {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.button-type-product {
+    width: 120px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(211, 211, 211);
+    border-radius: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.button-type-product:hover {
+    border: 2px solid rgb(14, 14, 14);
+    box-sizing: border-box;
+}
+
+.buy-product {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    width: 1320px;
+}
+
+.type-colore {
+    background-color: rgb(211,211,211);
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 138px;
+    height: 138px;
+    cursor: pointer;
+}
+
+.type-colore:hover {
+    border : 2px solid rgb(255, 255, 75);    
+    box-sizing: border-box;
+}
+
+.voucher {
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 30px;
+    gap: 10px;
+}
+
+header {
+    background-color: rgb(255,255,255);
+}
+
+.backgroundKranjang {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.isi-keranjang{
+    background-color:rgb(255, 255, 255);
+    border: 1px solid gray;
+    gap: 10px;
 }
