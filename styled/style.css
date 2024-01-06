@@ -190,7 +190,6 @@ header {
 
 .footer {
     background-color:rgb(255, 255, 255);
-    width: 100%;
 }
 
 .footername {
@@ -207,7 +206,6 @@ header {
 }
 
 .footer{
-    width: 1335px;
     align-items: center;
 }
 
@@ -299,10 +297,6 @@ header {
 .buy-product {
     display: flex;
     flex-direction: row;
-}
-
-.container {
-    width: 1320px;
 }
 
 .type-colore {
