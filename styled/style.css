@@ -47,18 +47,20 @@ header {
 }
 
 .banner {
-    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    margin: 100px 66px;
 }
 
 .bannertitle {
-    width: 515px;
-    height: 140px;
-    padding-top: 128px;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
 }
 
 .bannerprice {
-    width: 167px;
-    height: 34px;
+    display: flex;
 }
 
 .buttons {
@@ -349,17 +351,3 @@ header {
     border: 1px solid gray;
     gap: 10px;
 }
-
-/*
-Главная страница:
-добавить отступ между header и баннером
-Добавить для body - display:flex, и сделать чтобы все блоки шли в колонку и были по центру экрана
-Исправить ширину у header, банера, footer. Сделать для ниш ширину 100%
-Убрать footer из container
-для класса frame добавить отступ margin-top 60 px, добавить gap 17px
-для класса c-series добавить margin-bottom 60px
-
-Страница product
-Добавить отступы
-Сделать контейнер по центру(также как на главной странице)
-*/
