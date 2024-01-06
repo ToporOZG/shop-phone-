@@ -9,11 +9,13 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
     background-color:#F3F3F3;
-
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 header {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -45,7 +47,7 @@ header {
 }
 
 .banner {
-    margin-left: 152px;
+    width: 100%;
 }
 
 .bannertitle {
@@ -135,6 +137,8 @@ header {
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-top: 60;
+    gap: 17px;
 }
 
 .banner-realme {
@@ -159,6 +163,7 @@ header {
     gap: 20px;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 60px;
 }
 
 .feature {
@@ -183,6 +188,7 @@ header {
 
 .footer {
     background-color:rgb(255, 255, 255);
+    width: 100%;
 }
 
 .footername {
@@ -343,3 +349,17 @@ header {
     border: 1px solid gray;
     gap: 10px;
 }
+
+/*
+Главная страница:
+добавить отступ между header и баннером
+Добавить для body - display:flex, и сделать чтобы все блоки шли в колонку и были по центру экрана
+Исправить ширину у header, банера, footer. Сделать для ниш ширину 100%
+Убрать footer из container
+для класса frame добавить отступ margin-top 60 px, добавить gap 17px
+для класса c-series добавить margin-bottom 60px
+
+Страница product
+Добавить отступы
+Сделать контейнер по центру(также как на главной странице)
+*/
