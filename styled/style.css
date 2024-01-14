@@ -322,11 +322,17 @@ header {
     background-color:rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
-    margin: 20px;
     padding-top: 34px;
     padding-bottom: 34px;
     padding-left: 30px;
     gap: 10px;
+    width: 1320px;
+    margin: 20px auto;
+}
+
+.Content-Keranjang {
+    width: 1320px;
+    margin: 0 auto;
 }
 
 header {
@@ -336,8 +342,9 @@ header {
 .backgroundKranjang {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
+    padding: 27px;
+    border-bottom: 1px solid #00000025;
+    color: #00000086;
 }
 
 .isi-keranjang{
@@ -348,8 +355,10 @@ header {
 
 .char-keranjang{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
 .frame-keranjang{
@@ -365,20 +374,32 @@ header {
 }
 
 .switch-keranjang{
-    margin: 10px;
-    background-color: #a8a8a8;
     display: flex;
-    flex-direction: row;
-    width: 100px;
-    height: 50px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
 
+.switch-kernajang-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid #0000004a;
+}
+
 .produk-keranjang{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px;
+}
+
+.delete-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #00000060;
 }
