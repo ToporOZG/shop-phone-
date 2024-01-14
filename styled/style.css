@@ -345,3 +345,40 @@ header {
     border: 1px solid gray;
     gap: 10px;
 }
+
+.char-keranjang{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.frame-keranjang{
+    display: flex;
+    flex-direction: row;
+}
+
+.frame-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.switch-keranjang{
+    margin: 10px;
+    background-color: #a8a8a8;
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.produk-keranjang{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
