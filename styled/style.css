@@ -296,7 +296,14 @@ header {
 
 .buy-product {
     display: flex;
+    align-items: center;
     flex-direction: row;
+    height: 84px;
+    justify-content: flex-end;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    gap: 20px;
 }
 
 .type-colore {
@@ -327,12 +334,12 @@ header {
     padding-left: 30px;
     gap: 10px;
     width: 1320px;
-    margin: 20px auto;
+    margin: 35px auto;
 }
 
 .Content-Keranjang {
     width: 1320px;
-    margin: 0 auto;
+    margin: 40 auto;
 }
 
 header {
@@ -349,7 +356,6 @@ header {
 
 .isi-keranjang{
     background-color:rgb(255, 255, 255);
-    border: 1px solid gray;
     gap: 10px;
 }
 
@@ -402,4 +408,16 @@ header {
     align-items: center;
     justify-content: center;
     color: #00000060;
+}
+
+.order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd400;
+    margin: 10px;
+    margin-right: 50px;
+    width: 119px;
+    height: 48px;
+    font-size: 20px;
 }

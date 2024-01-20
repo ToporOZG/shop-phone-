@@ -3,6 +3,7 @@
     <head>
         <title>Page Title</title>
         <link rel="stylesheet" href="styled/style.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <header class="header">
@@ -48,7 +49,34 @@
                         </div>
                         <div class="switch-keranjang">
                             <div class="switch-kernajang-buttons">
-                                <p>-</p><p>1</p><p>+</p>
+                                <p onClick="MinusClick('Click1')" style="cursor: pointer;">-</p><p id="Click1">1</p><p onClick="PlusClick('Click1')" style="cursor: pointer;">+</p>
+                            </div>
+                        </div>
+                        <div class="char-keranjang">
+                            <p>Итого</p>
+                            <p>Rp 1.000.000</p>
+                        </div>
+                        <div class="delete-button">
+                            X
+                        </div>
+                    </div>
+                    <div class="produk-keranjang">
+                        <div class="frame-keranjang">
+                            <input type="checkbox">
+                            <img src="img/productimages.png" width="69px" height="84px" style="margin: 15px">
+                            <div class="frame-text">
+                                <h3>Realme C33</h3>
+                                <p>Night sea</p>
+                                <p>4 + 128 GB</p>
+                            </div>
+                        </div>
+                        <div class="char-keranjang">
+                            <p>Цена</p>
+                            <p>Rp 1.000.000</p>
+                        </div>
+                        <div class="switch-keranjang">
+                            <div class="switch-kernajang-buttons">
+                                <p onClick="MinusClick('Click2')" style="cursor: pointer;">-</p><p id="Click2">1</p><p onClick="PlusClick('Click2')" style="cursor: pointer;">+</p>
                             </div>
                         </div>
                         <div class="char-keranjang">
@@ -62,6 +90,7 @@
                 </div>
                 <div class="buy-product">
                     <p>Total</p><p>Rp 1.898.000</p>
+                    <div class="order">Order (2)</div>
                 </div>
             </div>
         </div>
