@@ -299,11 +299,11 @@ header {
     align-items: center;
     flex-direction: row;
     height: 84px;
-    justify-content: flex-end;
     background-color: white;
     margin-top: 50px;
     margin-bottom: 30px;
     gap: 20px;
+    padding-left: 20px;
 }
 
 .type-colore {
