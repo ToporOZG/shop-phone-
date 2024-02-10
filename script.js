@@ -19,28 +19,22 @@ let items = [
 ];
 
 function PlusClick(id){
-    if(id == 'Click1') {
-        Clicks1++;
-        document.getElementById(id).innerHTML=Clicks1
-    }
-    else if(id == 'Click2') {
-        Clicks2++;
-        document.getElementById(id).innerHTML=Clicks2
+    var ClickElement = document.getElementById('Click' + id)
+    if(ClickElement){
+        var clicks = parseInt(ClickElement.innerHTML)
+        clicks++;
+        ClickElement.innerHTML = clicks;
     }
 }
 
 function MinusClick(id){
-    if(id == 'Click1') {
-        if (Clicks1 > 1) {
-            Clicks1 -= 1;
+    var ClickElement = document.getElementById('Click' + id)
+    if(ClickElement){
+        var Clicks = parseInt(ClickElement.innerHTML)
+        if(Clicks > 1){
+        Clicks -= 1;    
         }
-        document.getElementById(id).innerHTML=Clicks1
-    }
-    else if(id == 'Click2') {
-        if (Clicks2 > 1) {
-            Clicks2 -= 1;
-        }
-        document.getElementById(id).innerHTML=Clicks2
+        ClickElement.innerHTML = Clicks;
     }
 }
 
@@ -61,10 +55,18 @@ let arr = [
         clicks: 1,
         image: 'img/productimages.png'
     },
+    {   id: 3,
+        name: 'Realme C33',
+        type: 'Night sea',
+        Storage: '4 + 128 GB',
+        price: 'Rp 1.000.000',
+        clicks: 1,
+        image: 'img/productimages.png'
+    },
 ];
 
 function RenderProducts() {
-    var ProductList = document.getElementById('ListProduct');
+    var ProductList = document.getElementsByClassName('isi-kerajang')[0];
     arr.forEach(function (element){
         var ListItem = document.createElement('div');
         ListItem.innerHTML = `
@@ -84,7 +86,9 @@ function RenderProducts() {
                         </div>
                         <div class="switch-keranjang">
                             <div class="switch-kernajang-buttons">
-                                <p onClick="MinusClick('Click1')" style="cursor: pointer;">-</p><p id="Click1">${element.clicks}</p><p onClick="PlusClick('Click1')" style="cursor: pointer;">+</p>
+                                <p onClick="MinusClick(${element.id})" style="cursor: pointer;">-</p>
+                                <p id="Click${element.id}">${element.clicks}</p>
+                                <p onClick="PlusClick(${element.id})" style="cursor: pointer;">+</p>
                             </div>
                         </div>
                         <div class="char-keranjang">
@@ -96,12 +100,15 @@ function RenderProducts() {
                         </div>
                     </div>
         `;
+        console.log(ProductList)
         ProductList.appendChild(ListItem)
+        
     })
 
 }
 
-RenderProducts()
+    RenderProducts();
+66
 // arr.forEach(function (element) {
 //     console.log(element.id)
 // });
