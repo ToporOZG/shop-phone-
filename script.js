@@ -71,34 +71,34 @@ function RenderProducts() {
         var ListItem = document.createElement('div');
         ListItem.innerHTML = `
         <div class="produk-keranjang">
-                        <div class="frame-keranjang">
-                            <input type="checkbox">
-                            <img src="${element.image}" width="69px" height="84px" style="margin: 15px">
-                            <div class="frame-text">
-                                <h3>${element.name}</h3>
-                                <p>${element.type}</p>
-                                <p>${element.Storage}</p>
-                            </div>
-                        </div>
-                        <div class="char-keranjang">
-                            <p>Цена</p>
-                            <p>${element.price}</p>
-                        </div>
-                        <div class="switch-keranjang">
-                            <div class="switch-kernajang-buttons">
-                                <p onClick="MinusClick(${element.id})" style="cursor: pointer;">-</p>
-                                <p id="Click${element.id}">${element.clicks}</p>
-                                <p onClick="PlusClick(${element.id})" style="cursor: pointer;">+</p>
-                            </div>
-                        </div>
-                        <div class="char-keranjang">
-                            <p>Итого</p>
-                            <p>Rp 1.000.000</p>
-                        </div>
-                        <div class="delete-button">
-                            X
-                        </div>
-                    </div>
+            <div class="frame-keranjang">
+                <input type="checkbox">
+                <img src="${element.image}" width="69px" height="84px" style="margin: 15px">
+                <div class="frame-text">
+                    <h3>${element.name}</h3>
+                    <p>${element.type}</p>
+                    <p>${element.Storage}</p>
+                </div>
+            </div>
+            <div class="char-keranjang">
+                <p>Цена</p>
+                <p>${element.price}</p>
+            </div>
+            <div class="switch-keranjang">
+                <div class="switch-kernajang-buttons">
+                    <p onClick="MinusClick(${element.id})" style="cursor: pointer;">-</p>
+                    <p id="Click${element.id}">${element.clicks}</p>
+                    <p onClick="PlusClick(${element.id})" style="cursor: pointer;">+</p>
+                </div>
+            </div>
+            <div class="char-keranjang">
+                <p>Итого</p>
+                <p>Rp 1.000.000</p>
+            </div>
+            <div class="delete-button">
+                X
+            </div>
+        </div>
         `;
         console.log(ProductList)
         ProductList.appendChild(ListItem)
@@ -106,9 +106,10 @@ function RenderProducts() {
     })
 
 }
+RenderProducts();
 
-    RenderProducts();
-66
+//Product in list//
+
 // arr.forEach(function (element) {
 //     console.log(element.id)
 // });
