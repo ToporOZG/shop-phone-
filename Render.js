@@ -16,7 +16,7 @@ function RenderProductcart() {
         <h2>${element.name}</h2>
         <h5>${element.specifications}</h5>
         <h4>${element.price}</h4>
-        <div class="button-primary-hover" id="product-in-basket" onClick={SaveProductCart(${element.id}, ${element.name}, ${element.specifications}, ${element.price}, ${element.image})}>
+        <div class="button-primary-hover" id="product-in-basket" onClick="SaveProductCart(${element.id}, '${element.name}', '${element.specifications}', '${element.price}', '${element.image}')">
             Cek Spesifikasi
         </div>
         `;
@@ -84,5 +84,6 @@ RenderProductcart2();
 RenderProductcart3();
 
 function SaveProductCart(id, name, specifications, price, image) {
-    localStorage.setItem(id, 'tset')
+    let product = {name, specifications, price, image}
+    localStorage.setItem(id, JSON.stringify(product))
 }
