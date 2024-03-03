@@ -16,7 +16,7 @@ function RenderProductcart() {
         <h2>${element.name}</h2>
         <h5>${element.specifications}</h5>
         <h4>${element.price}</h4>
-        <div class="button-primary-hover" id="product-in-basket" onClick={SaveProductCart()}>
+        <div class="button-primary-hover" id="product-in-basket" onClick={SaveProductCart(${element.id}, ${element.name}, ${element.specifications}, ${element.price}, ${element.image})}>
             Cek Spesifikasi
         </div>
         `;
@@ -83,10 +83,6 @@ RenderProductcart();
 RenderProductcart2();
 RenderProductcart3();
 
-function SaveProductCart() {
-    localStorage.setItem('id', '1')
-    localStorage.setItem('name', 'Realme Pad Mini')
-    localStorage.setItem('specifications', 'Peningkat Kinerja Kuat')
-    localStorage.setItem('price', 'Rp 2.399.000')
-    localStorage.setItem('image', 'img/productimage (1).png')
+function SaveProductCart(id, name, specifications, price, image) {
+    localStorage.setItem(id, 'tset')
 }
